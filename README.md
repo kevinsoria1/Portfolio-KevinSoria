@@ -1,59 +1,34 @@
-# FirstApp
+# Angular Modern Core - Counter Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.22.
+Aplicación web interactiva desarrollada para explorar y dominar la arquitectura moderna de componentes, la gestión del estado local y la reactividad en el frontend.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🎯 Objetivos del Proyecto
 
-```bash
-ng serve
-```
+* **Arquitectura Basada en Componentes:** Implementar componentes modulares e independientes utilizando el enfoque moderno de Standalone Components.
+* **Separación de Responsabilidades:** Desacoplar la lógica de negocio (TypeScript), la estructura visual (HTML) y la presentación (CSS).
+* **Reactividad y Eventos:** Gestionar el flujo de datos unidireccional, interpolación de variables en la vista y captura de eventos del usuario.
+* **Control de Estado Local:** Manipular y actualizar variables de estado dentro del ciclo de vida de un componente.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🛠️ Stack Tecnológico
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Framework Principal:** Angular (Arquitectura Standalone)
+* **Lenguaje de Programación:** TypeScript
+* **Estructura y Marcado:** HTML5
+* **Estilos:** CSS3 (Encapsulado a nivel de componente)
+* **Control de Versiones:** Git & GitHub
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🧩 Funcionalidades Implementadas
 
-```bash
-ng generate --help
-```
+* **Componente Contador (`CounterComponent`):**
+  * Visualización dinámica del valor del contador mediante data binding.
+  * Botones interactivos para incrementar, decrementar y reiniciar el valor a su estado inicial.
+  * Estilos encapsulados con bordes definidos y espaciado adaptado.
+* **Estructura Escalable:** Configuración inicial de enrutamiento y organización modular en carpetas (`pages/counter`).
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
