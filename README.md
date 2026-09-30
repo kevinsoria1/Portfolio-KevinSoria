@@ -1,59 +1,62 @@
-# FirstApp
+# 🚀 Kevin Soria | Portfolio Personal & Profesional
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.22.
+Sitio web interactivo y portfolio técnico desarrollado con **Angular** y **TypeScript**. La aplicación implementa arquitectura orientada a componentes independientes (*Standalone Components*), reactividad basada en **Signals**, control de flujo nativo (`@for`, `@if`) y un diseño estilizado *developer dark mode* con efectos de *glassmorphism* y animaciones fluidas en CSS3.
 
-## Development server
+---
 
-To start a local development server, run:
+## 👨‍💻 Perfil del Desarrollador
 
-```bash
-ng serve
-```
+- **Desarrollador:** Kevin Soria Olivar
+- **Rol:** Full-Stack Developer Junior (Foco en Backend y arquitecturas modulares)
+- **Ubicación:** Torrejón de Ardoz, Madrid
+- **LinkedIn:** [kevin-soria-dev](https://www.linkedin.com/in/kevin-soria-dev)
+- **GitHub:** [kevinsoria1](https://github.com/kevinsoria1)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🛠️ Stack Tecnológico de la Aplicación
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Framework:** Angular (Standalone Components, Signals reactivos, nuevo bloque de control de flujo).
+- **Lenguaje:** TypeScript (Tipado estricto, interfaces para modelos de datos).
+- **Diseño & Estilos:** CSS3 avanzado (Glassmorphism con `backdrop-filter`, efectos *ambient glow*, maquetación *fluid grid* sin cajas rígidas y tipografía técnica *Fira Code* / *Inter*).
+- **Tooling:** Angular CLI, Node.js, Vitest.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ✨ Características Técnicas del Portfolio
 
-```bash
-ng generate --help
-```
+1. **Gestión de Estado Reactiva con Signals:**
+   - Centralización de los datos de proyectos, habilidades y perfil en un servicio reutilizable (`PortfolioService`).
+   - Uso de `signal()` y `computed()` para derivar estados sin necesidad de suscripciones manuales o fugas de memoria.
 
-## Building
+2. **Filtrado Dinámico en Tiempo Real:**
+   - Sistema de filtrado por tecnologías mediante píldoras interactivas.
+   - La lista de proyectos se actualiza de manera reactiva al pulsar sobre cualquier tecnología del stack.
 
-To build the project run:
+3. **Arquitectura Standalone:**
+   - Estructura limpia prescindiendo por completo de `NgModule`.
+   - Carga modular directa y reducción del bundle final de producción.
 
-```bash
-ng build
-```
+4. **Experiencia de Usuario Fluida (Dark Aesthetic):**
+   - Fondos dinámicos ambientales con orbes difuminados en constante movimiento suave (`keyframes`).
+   - Tarjetas translúcidas con halos de luz interactivos al hacer *hover*.
+   - Distribución responsive optimizada para pantallas panorámicas (27"+) y dispositivos móviles.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 📂 Estructura del Código
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```text
+src/
+├── app/
+│   ├── components/
+│   │   └── header/              # Barra de navegación flotante con efecto translúcido
+│   ├── models/
+│   │   └── portfolio.model.ts   # Interfaces TypeScript (Project, SkillCategory)
+│   ├── services/
+│   │   └── portfolio.service.ts # Servicio de datos con Signals reactivos
+│   ├── app.ts                   # Lógica reactiva de filtros y estado del componente raíz
+│   ├── app.html                 # Maquetación semántica y bloques de control (@if, @for)
+│   └── app.css                  # Animaciones, variables y diseño visual Cyberpunk/Dark
+├── public/                      # Recursos multimedia estáticos (imágenes y assets)
+└── styles.css                   # Resets globales del lienzo y contenedor html/body
