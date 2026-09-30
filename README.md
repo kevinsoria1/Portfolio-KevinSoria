@@ -40,7 +40,7 @@ Sitio web interactivo y portfolio técnico desarrollado con **Angular** y **Type
 4. **Experiencia de Usuario Fluida (Dark Aesthetic):**
    - Fondos dinámicos ambientales con orbes difuminados en constante movimiento suave (`keyframes`).
    - Tarjetas translúcidas con halos de luz interactivos al hacer *hover*.
-   - Distribución responsive optimizada para pantallas panorámicas (27"+) y dispositivos móviles.
+   - Distribución responsive optimizada.
 
 ---
 
