@@ -23,28 +23,28 @@ export class PortfolioService {
       role: 'Full-Stack Developer',
       period: '2026',
       featured: true,
-      description: 'Plataforma web colaborativa y sistema formativo técnico con arquitectura modular y control de versiones integrado.',
+      description: 'Plataforma web colaborativa y sistema formativo técnico con arquitectura desacoplada y control de versiones integrado.',
       highlights: [
-        'Desarrollo de módulos interactivos de código con backend desacoplado.',
-        'Implementación de autenticación segura, control de roles y consumo de APIs REST.',
-        'Optimización del rendimiento frontend y diseño de componentes reutilizables.'
+        'Desarrollo de módulos interactivos de código con arquitectura modular y backend desacoplado.',
+        'Implementación de autenticación segura, control de roles (RBAC) y consumo de endpoints REST.',
+        'Persistencia de datos relacional y despliegue contenerizado con Docker.'
       ],
-      tech: ['TypeScript', 'Node.js', 'NestJS', 'Angular', 'Docker', 'PostgreSQL'],
+      tech: ['Node.js', 'NestJS', 'PostgreSQL', 'TypeScript', 'Docker', 'REST API'],
       githubUrl: 'https://github.com/kevinsoria1/DLTCode'
     },
     {
       id: 'saluspet',
-      title: 'SalusPet System',
-      role: 'Backend & Database Lead',
+      title: 'SalusPet Ecosystem',
+      role: 'Mobile & Backend Developer',
       period: '2026',
       featured: true,
-      description: 'Plataforma de gestión clínica y seguimiento veterinario integral con control de historiales médicos, citas y trazabilidad sanitaria.',
+      description: 'Ecosistema integral multiplataforma para centralizar historiales clínicos y cuidados veterinarios, eliminando la cartilla de papel física.',
       highlights: [
-        'Modelado relacional y persistencia de datos orientada a consistencia médica.',
-        'Endpoints RESTful seguros para citas, historiales y analíticas de pacientes.',
-        'Validación estricta de esquemas y lógica de negocio desacoplada.'
+        'App móvil nativa en Android (Kotlin + Jetpack Compose) con consumo reactivo de API mediante Retrofit y perfiles digitales.',
+        'Backend modular con NestJS y MySQL para autenticación, gestión de citas e historiales médicos en la nube.',
+        'Módulo complementario de escritorio (Java/FlatLaf) para clínicas y protectoras con generación y exportación de informes clínicos en PDF (iTextPDF).'
       ],
-      tech: ['Node.js', 'NestJS', 'PostgreSQL', 'TypeScript', 'Docker', 'REST API'],
+      tech: ['Android (Kotlin)', 'Jetpack Compose', 'NestJS', 'MySQL', 'Java', 'REST API'],
       githubUrl: 'https://github.com/kevinsoria1/Saluspet'
     },
     {
