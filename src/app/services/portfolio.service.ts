@@ -19,30 +19,30 @@ export class PortfolioService {
   private projectsSignal = signal([
     {
       id: 'dltcode',
-      title: 'DLTCode Platform',
-      role: 'Full-Stack Developer',
+      title: 'DLTCode - Plataforma de Gamificación',
+      role: 'Full-Stack Developer (Prácticas)',
       period: '2026',
       featured: true,
-      description: 'Plataforma web colaborativa y sistema formativo técnico con arquitectura desacoplada y control de versiones integrado.',
+      description: 'Plataforma empresarial de gamificación corporativa para automatización y dinamización de procesos internos, desarrollada durante el periodo de prácticas profesionales.',
       highlights: [
-        'Desarrollo de módulos interactivos de código con arquitectura modular y backend desacoplado.',
-        'Implementación de autenticación segura, control de roles (RBAC) y consumo de endpoints REST.',
-        'Persistencia de datos relacional y despliegue contenerizado con Docker.'
+        'Diseño e implementación de API REST modular con arquitectura en NestJS y TypeORM, inyección de dependencias y control de acceso RBAC.',
+        'Autenticación de doble capa con JWT + Refresh Tokens y validación estricta con DTOs.',
+        'Contenerización multi-servicio con Docker Compose (API + PostgreSQL) y documentación con Swagger UI.'
       ],
       tech: ['Node.js', 'NestJS', 'PostgreSQL', 'TypeScript', 'Docker', 'REST API'],
       githubUrl: 'https://github.com/kevinsoria1/DLTCode'
     },
     {
       id: 'saluspet',
-      title: 'SalusPet Ecosystem',
+      title: 'SalusPet - App Veterinaria',
       role: 'Mobile & Backend Developer',
       period: '2026',
       featured: true,
-      description: 'Ecosistema integral multiplataforma para centralizar historiales clínicos y cuidados veterinarios, eliminando la cartilla de papel física.',
+      description: 'Aplicación móvil Android para digitalizar el cuidado de mascotas y centralizar historiales clínicos en la nube, sustituyendo la cartilla física de papel.',
       highlights: [
-        'App móvil nativa en Android (Kotlin + Jetpack Compose) con consumo reactivo de API mediante Retrofit y perfiles digitales.',
-        'Backend modular con NestJS y MySQL para autenticación, gestión de citas e historiales médicos en la nube.',
-        'Módulo complementario de escritorio (Java/FlatLaf) para clínicas y protectoras con generación y exportación de informes clínicos en PDF (iTextPDF).'
+        'App nativa en Android con Kotlin y Jetpack Compose, conectada mediante Retrofit para gestión de perfiles y citas en tiempo real.',
+        'API REST modular desarrollada con NestJS y MySQL para autenticación, gestión de datos médicos y persistencia en la nube.',
+        'Módulo complementario de escritorio en Java para clínicas y protectoras con exportación de dossieres clínicos en PDF (iTextPDF).'
       ],
       tech: ['Android (Kotlin)', 'Jetpack Compose', 'NestJS', 'MySQL', 'Java', 'REST API'],
       githubUrl: 'https://github.com/kevinsoria1/Saluspet'
