@@ -150,7 +150,28 @@
       }
     </div>
   </section>
+<!-- CERTIFICATIONS SECTION -->
+  <section id="certificaciones" class="section-container">
+    <div class="section-header">
+      <span class="section-tag">// ACREDITACIONES</span>
+      <h2>Certificaciones & Títulos</h2>
+      <p class="section-desc">Certificaciones oficiales, competencias lingüísticas e incentivos de contratación:</p>
+    </div>
 
+    <div class="cert-grid">
+      @for (cert of certifications(); track cert.title) {
+        <div class="cert-card">
+          <div class="cert-header">
+            <span class="cert-icon">{{ cert.icon }}</span>
+            <span class="cert-badge">{{ cert.badge }}</span>
+          </div>
+          <h3 class="cert-title">{{ cert.title }}</h3>
+          <span class="cert-issuer">{{ cert.issuer }}</span>
+          <p class="cert-detail">{{ cert.detail }}</p>
+        </div>
+      }
+    </div>
+  </section>
   <!-- CONTACT SECTION -->
   <section id="contacto" class="section-container contact-section">
     <div class="contact-card">

@@ -112,7 +112,33 @@ export class PortfolioService {
       skills: ['Docker', 'Git / GitHub', 'Maven', 'Visual Studio', 'Postman', 'Vercel']
     }
   ]);
+// Certificaciones, movilidad y disponibilidad
+  private certificationsSignal = signal([
+    {
+      title: 'Certificado de Inglés EF SET (Nivel B2)',
+      issuer: 'EF Standard English Test (MCER)',
+      badge: 'Idioma / B2',
+      icon: '🌍',
+      detail: 'Competencia profesional intermedia-alta para entornos técnicos y comunicación internacional.'
+    },
+    {
+      title: 'Sistema Nacional de Garantía Juvenil',
+      issuer: 'Ministerio de Trabajo y Economía Social',
+      badge: 'Bonificación Contratación',
+      icon: '🏛️',
+      detail: 'Inscripción activa con bonificaciones e incentivos fiscales aplicables para empresas contratantes.'
+    },
+    {
+      title: 'Curso de Iniciación a la IA y ChatGPT',
+      issuer: 'BIG school',
+      badge: 'Inteligencia Artificial',
+      icon: '🤖',
+      detail: 'Integración práctica de modelos LLM, ingeniería de prompts y optimización de flujos de trabajo.'
+    }
+  ]);
 
+  // Getter público
+  readonly certifications = this.certificationsSignal.asReadonly();
   // Getters públicos de sólo lectura
   readonly profile = this.profileSignal.asReadonly();
   readonly projects = this.projectsSignal.asReadonly();
