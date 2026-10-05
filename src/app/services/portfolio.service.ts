@@ -6,11 +6,14 @@ import { Injectable, signal } from '@angular/core';
 export class PortfolioService {
 
   // Perfil del desarrollador
+  // Perfil del desarrollador con redes añadidas
   private profileSignal = signal({
     name: 'Kevin Soria Olivar',
     title: 'Full-Stack Developer Junior',
     summary: 'Desarrollador Junior con foco en Backend y bases Full-Stack. Especializado en APIs REST con Node.js, TypeScript y NestJS, Java (Spring Boot), C# (.NET), bases de datos relacionales y despliegue contenerizado con Docker.',
-    email: 'kevinsoria.dev@gmail.com' // Ajusta a tu correo si es otro
+    email: 'kevinsoria.dev@gmail.com',
+    github: 'https://github.com/kevinsoria1',
+    linkedin: 'https://www.linkedin.com/in/kevin-soria-dev'
   });
 
   private projectsSignal = signal([
@@ -18,7 +21,7 @@ export class PortfolioService {
       id: 'dltcode',
       title: 'DLTCode Platform',
       role: 'Full-Stack Developer',
-      period: '2025 - 2026',
+      period: '2026',
       featured: true,
       description: 'Plataforma web colaborativa y sistema formativo técnico con arquitectura modular y control de versiones integrado.',
       highlights: [
@@ -33,7 +36,7 @@ export class PortfolioService {
       id: 'saluspet',
       title: 'SalusPet System',
       role: 'Backend & Database Lead',
-      period: '2025',
+      period: '2026',
       featured: true,
       description: 'Plataforma de gestión clínica y seguimiento veterinario integral con control de historiales médicos, citas y trazabilidad sanitaria.',
       highlights: [
@@ -48,7 +51,7 @@ export class PortfolioService {
       id: 'api-facturacion',
       title: 'API Facturación e Inventario',
       role: 'Backend Developer (Java)',
-      period: '2025',
+      period: '2026',
       featured: false,
       description: 'API RESTful transaccional diseñada bajo arquitectura modular Package-by-Feature para el ciclo completo de ventas, facturación y stock.',
       highlights: [
@@ -63,7 +66,7 @@ export class PortfolioService {
       id: 'catalogo-videojuegos',
       title: 'GameStore Desktop Manager',
       role: 'Software Developer (C# / WinForms)',
-      period: '2024 - 2025',
+      period: '2025',
       featured: false,
       description: 'Aplicación de escritorio para la administración, catálogo visual y compra de videojuegos con roles diferenciados (Cliente y Panel Admin).',
       highlights: [
@@ -78,7 +81,7 @@ export class PortfolioService {
       id: 'kanban-wpf',
       title: 'KanbanWPF Task Manager',
       role: 'Desktop Developer (C# / WPF)',
-      period: '2024',
+      period: '2025',
       featured: false,
       description: 'Herramienta de productividad de escritorio con tablero Kanban interactivo para el seguimiento de tareas por estados y prioridades.',
       highlights: [
