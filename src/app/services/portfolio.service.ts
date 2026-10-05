@@ -5,6 +5,14 @@ import { Injectable, signal } from '@angular/core';
 })
 export class PortfolioService {
 
+  // Perfil del desarrollador
+  private profileSignal = signal({
+    name: 'Kevin Soria Olivar',
+    title: 'Full-Stack Developer Junior',
+    summary: 'Desarrollador Junior con foco en Backend y bases Full-Stack. Especializado en APIs REST con Node.js, TypeScript y NestJS, Java (Spring Boot), C# (.NET), bases de datos relacionales y despliegue contenerizado con Docker.',
+    email: 'kevinsoria.dev@gmail.com' // Ajusta a tu correo si es otro
+  });
+
   private projectsSignal = signal([
     {
       id: 'dltcode',
@@ -102,6 +110,8 @@ export class PortfolioService {
     }
   ]);
 
+  // Getters públicos de sólo lectura
+  readonly profile = this.profileSignal.asReadonly();
   readonly projects = this.projectsSignal.asReadonly();
   readonly skillCategories = this.skillCategoriesSignal.asReadonly();
 }
