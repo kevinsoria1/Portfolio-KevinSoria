@@ -2,15 +2,16 @@ export interface Project {
   id: string;
   title: string;
   role: string;
-  period?: string;
+  period: string;
   description: string;
   highlights: string[];
-  tech: string[];
-  githubUrl?: string;
-  liveUrl?: string;
+  tags: string[];
+  repoUrl: string;
+  demoUrl?: string;
+  featured?: boolean;
 }
 
 export interface SkillCategory {
-  category: string;
+  name: string;
   skills: string[];
 }

@@ -16,6 +16,7 @@ export class App {
   profile = this.portfolioService.profile;
   allProjects = this.portfolioService.projects;
   skillCategories = this.portfolioService.skillCategories;
+  certifications = this.portfolioService.certifications;
 
   // Filtro interactivo de tecnologías
   selectedTech = signal<string>('TODOS');
