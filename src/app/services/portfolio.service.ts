@@ -11,7 +11,7 @@ export class PortfolioService {
     name: 'Kevin Soria Olivar',
     title: 'Full-Stack Developer Junior',
     summary: 'Desarrollador Junior con foco en Backend y bases Full-Stack. Especializado en APIs REST con Node.js, TypeScript y NestJS, Java (Spring Boot), C# (.NET), bases de datos relacionales y despliegue contenerizado con Docker.',
-    email: 'kevinsoria.dev@gmail.com',
+    email: 'kevin.soria.olivar@gmail.com',
     github: 'https://github.com/kevinsoria1',
     linkedin: 'https://www.linkedin.com/in/kevin-soria-dev'
   });
