@@ -105,8 +105,12 @@
     <!-- Grid de proyectos fluidos -->
     <div class="dynamic-projects-grid">
       @for (project of filteredProjects(); track project.id) {
-        <article class="fluid-card">
+        <article class="fluid-card" [class.featured-card]="project.featured">
           <div class="card-glow-overlay"></div>
+
+          @if (project.featured) {
+            <div class="featured-badge">⭐ Destacado</div>
+          }
           
           <div class="card-top">
             <span class="project-role-badge">{{ project.role }}</span>
